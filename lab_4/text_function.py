@@ -17,22 +17,17 @@ def cleanup_text(text: str) -> str:
 
 def delete_stop_words(text: str) -> list:
     stop_words = stopwords.words("english")
-    filtered_sentence = [w for w in text if not w.lower() in stop_words]
-    return filtered_sentence
+    return [w for w in text if not w.lower() in stop_words]
 
 
 def stemming(word: str) -> str:
     ps = PorterStemmer()
-    stem = ps.stem(word)
-    return stem
+    return ps.stem(word)
 
 
 def text_tokenizer(text: str):
     clened = cleanup_text(text)
     tokens = word_tokenize(clened)
     without_stopwords = delete_stop_words(tokens)
-    words = []
-    for w in without_stopwords:
-        if len(w) > 3:
-            words.append(stemming(w))
-    return words
+
+    return [stemming(w) for w in without_stopwords if len(w) > 3]
