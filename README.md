@@ -14,5 +14,18 @@ Qualitative Data Analysis and Text Mining is a repository of my university cours
 - **'lab_4'** - Tokenization, vectorization text - CountVectorizer, TfidfVectorizer (scikit-klearn library),
                 Document matrix operations term
                 vizualization - PrettyTable (matplotlib library) & Barh Plot (pandas library)
+
+- **'lab_5'**  Classifier:
+                
+              ▪ DecisionTreeClassifier, 
+
+              ▪ RandomForestClassifier,
+
+              ▪ SVC,
+
+              ▪ AdaBoostClassifier,
+
+              ▪ BaggingClassifier
+                
                 
 - **'lab_6'** - Entity matching - Euclidean distances, Cosine Similarity, Cosine distances
